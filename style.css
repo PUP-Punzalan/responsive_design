@@ -1,0 +1,182 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+@font-face {
+  font-family: "primary";
+  src: url("./fonts/beaufort/beaufort-heavyitalic.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "beaufort";
+  src: url(fonts/beaufort/beaufort-medium.otf) format("otf");
+  font-weight: 600;
+  font-style: italic;
+} */
+
+/*#region Variables */
+:root {
+  --ff-primary: "beaufort", sans-serif;
+  /* --ff-primary: "Nunito", sans-serif; */
+  /* Color variables starts here */
+  --clr-light-txt-01: #ffffff;
+  --clr-light-txt-02: #f9f9f9;
+  --clr-dark-txt-01: #010101;
+  --clr-dark-txt-02: #111111;
+
+  --clr-dark-bg-01: #111111;
+  --clr-dark-bg-02: #282828;
+  --clr-dark-bg-03: #061c25;
+  --clr-dark-bg-04: #006680;
+
+  --clr-dark-bg-05: #000913;
+
+  --clr-light-bg-01: #ffffff;
+
+  --clr-primary-01: #0bc4e2;
+  /* Color variables ends here */
+}
+/*#endregion Varaibles */
+
+/*#region Default styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+a {
+  font-family: var(--ff-primary);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+input {
+  font-family: var(--ff-primary);
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  min-width: 100px;
+}
+/*#endregion Default styling */
+
+/*#region Typography */
+.fs-sm {
+  font-size: 0.85rem;
+}
+
+.fs-md {
+  font-size: 1rem;
+}
+
+.fs-lg {
+  font-size: 1.25rem;
+}
+
+.fw-thin {
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+/*#endregion Typography */
+
+/*#region Main styling */
+
+/*#endregion Main styling */
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px red dashed;
+}
+
+button,
+a {
+  background: none;
+  color: var(--clr-light-txt-01);
+}
+
+header {
+  background: var(--clr-dark-bg-01);
+  min-height: 70px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  color: var(--clr-light-txt-01);
+  align-items: center;
+  padding-inline: 2rem;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  max-width: 50px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.5rem;
+  background: green;
+  border-radius: 8px;
+}
+/*#region Responsiveness */
+
+/*#endregion Responsiveness */
+
+h1 {
+  font-family: "primary";
+}
