@@ -460,7 +460,12 @@ footer {
 }
 
 .patch:hover {
-  transform: scale3d(1.1, 1, 2);
+  transform: scale(0.97);
+
+  .patch-name {
+    background: var(--clr-dark-bg-04);
+    padding-left: 2rem;
+  }
 }
 
 .patch img {
