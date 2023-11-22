@@ -477,6 +477,100 @@ footer {
 }
 /*#endregion Footer ends here */
 
+/*#region Home/Index  */
+.contents {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 3)
+    ),
+    url("https://cdn.discordapp.com/attachments/1165943459509719092/1176880705435861062/samira-soul-fighter-lol-4k-wallpaper-uhdpaper.com-4811l.jpg?ex=65707a91&is=655e0591&hm=25bc0b1cfa50a32b3501eeba68a79ee573843a7301ba2f5cb0d957a1cdcab23c&");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* outline: 10px dashed red; */
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto 4rem auto;
+  text-align: center;
+  padding-inline: 3rem;
+  /* outline: 10px pink solid; */
+}
+
+.content-info h1 {
+  font-size: calc(61.82px + 3.03vw);
+  line-height: calc(61.82px + 3.03vw);
+  margin-bottom: 4rem;
+  letter-spacing: 2px;
+}
+
+.content-info h2 {
+  font-size: 1.5rem;
+  line-height: 0.5rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 4rem;
+}
+
+.content-info h4 {
+  font-size: 0.9rem;
+  font-family: var(--ff-secondary);
+  font-weight: bolder;
+  letter-spacing: 1px;
+  max-width: 78ch;
+  color: var(--clr-dark-txt-02);
+  line-height: 1.3rem;
+}
+
+.start-but {
+  margin: 5rem;
+  width: 100%;
+}
+
+#start {
+  background-color: #e0b667;
+  color: var(--clr-dark-txt-02);
+  padding: 20px 20px;
+  width: 15%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "primary-v2";
+}
+
+#section1 {
+  margin: 10rem;
+  text-align: center;
+}
+
+#section1 h2 {
+  font-size: 50px;
+  max-width: 100ch;
+}
+
+#section1 h4 {
+  margin-top: 7rem;
+}
+/*#endregion Home/Index  */
+
 /*#region List */
 .contents {
   display: flex;
@@ -945,7 +1039,6 @@ section {
 /*#endregion Support  */
 
 /*#region Patch notes  */
-/*#region Patch Notes starts here */
 .patches {
   display: flex;
   justify-content: center;
