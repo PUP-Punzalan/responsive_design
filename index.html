@@ -50,87 +50,35 @@
       <div class="container">
         <div class="content-container">
           
-          <div class="title">
-            <h2>CHOOSE YOUR</h2>
-            <h1>CHARACTER</h1>
+          <div class="content-info">
+            <h2>WELCOME TO THE RIFT</h2>
+            <h1>LEARN THE BASICS</h1>
             <h4>
-              With more than 140 champions, you’ll find the perfect match for
-              your playstyle. Master one, or master them all.
+              Embark on your Iskode journey by diving into the essentials. 
+              Explore the guide below to grasp the core elements of the hottest game mode in the realm.
             </h4>
+            
+            <div class="start-but">
+              <button onclick="scrollToSection('section1')" id="start">Let's Begin</button>
+            </div>
+            
+            <div id="section1">
+              <h2>What is ISKODE LEGENDS?</h2>
+              <h4>Iskode is a team-based strategy game in which two teams of five formidable champions confront each other to annihilate the opposing base. 
+                Pick from a selection of over 140 champions to execute impressive maneuvers, secure eliminations, and bring down towers as you strive 
+                for triumph in the battlefield.
+              </h4>
+            </div>
           </div>
 
-          <div class="character-grid">
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">JOETOP</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">JAMADIFF</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt80ff58fe809777ff/5db05fa8adc8656c7d24e7d6/RiotX_ChampionList_akali.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">BUHAMID</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">KAYDEECEE</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-            <div class="character">
-              <img
-                src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250"
-                alt=""
-              />
-              <p class="character-name">SIGPORT</p>
-            </div>
-          </div>
+          <script>
+            function scrollToSection(sectionId) {
+              const section = document.getElementById(sectionId);
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          </script>
         </div>
       </div>
     </div>  
