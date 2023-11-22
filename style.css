@@ -494,9 +494,98 @@ footer {
   padding: 0.9rem 1.5rem;
   color: var(--clr-light-txt-01);
   background: var(--clr-dark-bg-03);
+  transition: all 0.25s ease-in-out;
+}
+
+/*#region Patch Notes starts here */
+.patches {
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.patch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rem;
+
+  /* outline: 10px dashed darkolivegreen; */
+}
+
+.patch-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  /* outline: 10px dashed darkgoldenrod; */
+}
+
+.patch-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 2rem auto 4rem auto;
+}
+
+.patch-header h1{
+  padding: 2rem;
+  font-size: 2rem;
+  color: var(--clr-light-txt-01);
+  background: var(--clr-dark-bg-03);
+}
+
+.patch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.6rem;
+  margin-bottom: 8rem;
+
+  /* outline: 10px dashed blue; */
+}
+
+.patch {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+
+  /* padding: ; */
+  /* margin: 0.5rem; */
+  /* outline: 1px dashed blue; */
+}
+
+.patch:hover {
+  transform: scale(0.97);
+
+  .patch-name {
+    background: var(--clr-dark-bg-04);
+    padding-left: 2rem;
+  }
+}
+
+.patch img {
+  object-fit: cover;
+  width: 90%;
+}
+
+.patch .patch-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 0.9rem 1.5rem;
+  color: var(--clr-light-txt-01);
+  background: var(--clr-dark-bg-05);
+  width: 90%;
 
   transition: all 0.25s ease-in-out;
 }
+
 /*#endregion Lists  */
 
 /*#region Info  */
